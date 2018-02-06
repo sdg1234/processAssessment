@@ -1,0 +1,49 @@
+<md-dialog class="contest-dialog">
+    <div class="dialog-heading">Process Assessment</div>
+    <md-dialog-content class="content-content" >
+      <div class="md-dialog-content content-dialog">
+        <div layout="column">
+      <md-input-container class="input-dialog" style="width: 100%;">
+        <label>Line of Business</label>
+        <md-select ng-model="selectedItem" md-selected-text="getSelectedText()" ng-change="filterBusiness()">
+          <md-option ng-repeat="item in lobData" value="{{item.lob}}">{{item.lob}}</md-option>
+        </md-select>
+      </md-input-container>
+      <md-input-container class="input-dialog" style="width: 100%;">
+          <label>Business Area</label>
+          <md-select ng-model="businessArea" md-selected-text="getSelectedText()" ng-change="filterProcess()">
+            <md-option  ng-repeat="item in businessData[0]"  value="{{item.businessArea}}">{{item.businessArea}}</md-option>
+           
+          </md-select>
+        </md-input-container>
+        <md-input-container class="input-dialog" style="width: 100%;">
+            <label>Process Area</label>
+            <md-select ng-model="processArea" md-selected-text="getSelectedText()">
+              <md-option ng-repeat="item in processData[0]" value="{{item}}">{{item}}</md-option>
+      
+            </md-select>
+          </md-input-container>
+          <md-input-container class="md-block input-dialog" flex-gt-sm>
+            <label>Process Name</label>
+            <input ng-model="processName">
+          </md-input-container>
+          <md-input-container class="md-block input-dialog" flex-gt-sm>
+            <label>Account Name</label>
+            <input ng-model="accountName">
+          </md-input-container>
+    </div>
+       <md-input-container class="md-block input-dialog">
+          <label>Process Description</label>
+          <textarea ng-model="processDesc" md-maxlength="150" rows="2" md-select-on-focus></textarea>
+        </md-input-container>
+        <div layout="row">
+          <span flex></span>
+           <md-button class="md-raised md-primary" ng-click="ok()">Create Assessment</md-button>
+        </div>
+        </div>
+      </div>
+    </md-dialog-content>
+
+  
+ 
+</md-dialog>

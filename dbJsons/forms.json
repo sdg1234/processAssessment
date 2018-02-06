@@ -1,0 +1,400 @@
+[{
+    "question": "Process Classification",
+    "values": [{
+        "name": "Content to System",
+        "value": "3"
+    }, {
+        "name": "System to System",
+        "value": "5"
+    }, {
+        "name": "System to Content",
+        "value": "2"
+    }, {
+        "name": "Content to Content",
+        "value": "1"
+    }]
+}, {
+    "question": "Source type",
+    "values": [{
+        "name": "MS Excel",
+        "value": "10"
+    }, {
+        "name": "MS Word",
+        "value": "10"
+    }, {
+        "name": "CSV",
+        "value": "10"
+    }, {
+        "name": "PDF",
+        "value": "6"
+    }, {
+        "name": "Scanned PDF",
+        "value": "3"
+    }, {
+        "name": "Hand written scanned PDF",
+        "value": "0"
+    }, {
+        "name": "Mainframes",
+        "value": "4"
+    }, {
+        "name": "Web Application",
+        "value": "7"
+    }, {
+        "name": "Email-OUtlook/Lotus Note",
+        "value": "8"
+    }, {
+        "name": "Email-Lotus App",
+        "value": "4"
+    }, {
+        "name": "Other Product",
+        "value": "4"
+    }, {
+        "name": "Other Customer Built",
+        "value": "1"
+    }, {
+        "name": "Thick Client Windows Application",
+        "value": "5"
+    }]
+}, {
+    "question": "Target type",
+    "values": [{
+        "name": "MS Excel",
+        "value": "10"
+    }, {
+        "name": "MS Word",
+        "value": "10"
+    }, {
+        "name": "CSV",
+        "value": "10"
+    }, {
+        "name": "PDF",
+        "value": "6"
+    }, {
+        "name": "Scanned PDF",
+        "value": "3"
+    }, {
+        "name": "Hand written scanned PDF",
+        "value": "0"
+    }, {
+        "name": "Mainframes",
+        "value": "4"
+    }, {
+        "name": "Web Application",
+        "value": "7"
+    }, {
+        "name": "Email-OUtlook/Lotus Note",
+        "value": "8"
+    }, {
+        "name": "Email-Lotus App",
+        "value": "4"
+    }, {
+        "name": "Other Product",
+        "value": "4"
+    }, {
+        "name": "Other Customer Built",
+        "value": "1"
+    }, {
+        "name": "Thick Client Windows Application",
+        "value": "5"
+    }]
+}, {
+    "question": "Interportability of Middle tier services and feasibility of Integration",
+    "values": [{
+        "name": "NA - UI Automation",
+        "value": "5"
+    }, {
+        "name": "Modern Technologies-High",
+        "value": "3"
+    }, {
+        "name": "Legacy - Low",
+        "value": "0"
+    }]
+}, {
+    "question": "Number of Process steps",
+    "values": [{
+        "name": "Zero",
+        "value": "25"
+    }, {
+        "name": "One",
+        "value": "10"
+    }, {
+        "name": "Two",
+        "value": "3"
+    }, {
+        "name": "More than Two",
+        "value": "0"
+    }]
+}, {
+    "question": "Extent of re-design required",
+    "values": [{
+        "name": "Nil",
+        "value": "35"
+    }, {
+        "name": "Low",
+        "value": "20"
+    }, {
+        "name": "Medium",
+        "value": "5"
+    }, {
+        "name": "High",
+        "value": "0"
+    }]
+}, {
+    "question": "Are the rules externalized in the system",
+    "values": [{
+        "name": "Full",
+        "value": "10"
+    }, {
+        "name": "Partial",
+        "value": "5"
+    }, {
+        "name": "Nil",
+        "value": "0"
+    }]
+}, {
+    "question": "Total number of steps to be automated",
+    "values": [{
+        "name": "1 to 5",
+        "value": "10"
+    }, {
+        "name": "6 to 10",
+        "value": "7"
+    }, {
+        "name": "11 to 15",
+        "value": "5"
+    }, {
+        "name": "More than 15",
+        "value": "2"
+    }]
+}, {
+    "question": "Total number of screens to be navigated in the interfacing systems",
+    "values": [{
+        "name": "1 to 5",
+        "value": "10"
+    }, {
+        "name": "6 to 10",
+        "value": "7"
+    }, {
+        "name": "11 to 15",
+        "value": "5"
+    }, {
+        "name": "More than 15",
+        "value": "2"
+    }]
+}, {
+    "question": "what kind of decission making steps involved in the process",
+    "values": [{
+        "name": "Simple and predictable",
+        "value": "15"
+    }, {
+        "name": "Data and Parameters based",
+        "value": "10"
+    }, {
+        "name": "Judgemental",
+        "value": "3"
+    }]
+}, {
+    "question": "How this process will be triggered",
+    "values": [{
+        "name": "Automated / Email",
+        "value": "5"
+    }, {
+        "name": "Manual",
+        "value": "0"
+    }]
+}, {
+    "question": "How stable the process is before automation?",
+    "values": [{
+        "name": "High",
+        "value": "5"
+    }, {
+        "name": "Medium",
+        "value": "0"
+    }, {
+        "name": "Low",
+        "value": "0"
+    }]
+}, {
+    "question": "What  type of data is input to the process",
+    "values": [{
+        "name": "Structured",
+        "value": "5"
+    }, {
+        "name": "UnStructured",
+        "value": "0"
+    }]
+}, {
+    "question": "What  type of data is output from  the process",
+    "values": [{
+        "name": "Structured",
+        "value": "5"
+    }, {
+        "name": "UnStructured",
+        "value": "0"
+    }]
+}, {
+    "question": "what is the % of steps that can be automated in the process?",
+    "values": [{
+        "name": "20",
+        "value": "0"
+    }, {
+        "name": "30",
+        "value": "0"
+    }, {
+        "name": "40",
+        "value": "2"
+    }, {
+        "name": "50",
+        "value": "3"
+    }, {
+        "name": "60",
+        "value": "4"
+    }, {
+        "name": "70",
+        "value": "6"
+    }, {
+        "name": "80",
+        "value": "8"
+    }, {
+        "name": "90",
+        "value": "9"
+    }, {
+        "name": "100",
+        "value": "10"
+    }]
+}, {
+    "question": "Do the process invole steps to read data using OCR?",
+    "values": [{
+        "name": "No",
+        "value": "1"
+    }, {
+        "name": "Yes, Printed Images",
+        "value": "0.6"
+    }, {
+        "name": "Yes, Hand written Images",
+        "value": "0"
+    }]
+}, {
+    "question": "Manual effort involved (Hours per month)",
+    "values": []
+}, {
+    "question": "Transaction Volume for the process",
+    "values": []
+}, {
+    "question": "Yearly Volume Growth in %",
+    "values": []
+}, {
+    "question": "Number of Bots required",
+    "values": []
+}, {
+    "question": "Automation scope (% of steps can be automated)",
+    "values": []
+}, {
+    "question": "Bot creation cost per bot (Person Hours)",
+    "values": []
+}, {
+    "question": "Bot Maintenance Costs (Hours per Month)",
+    "values": []
+}, {
+    "question": "Manpower cost (Per Hour)",
+    "values": []
+}, {
+    "question": "License Cost per Bot per year",
+    "values": []
+}, {
+    "question": "Infrastructure procurement cost per Bot",
+    "values": []
+}, {
+    "question": "Time to get RoI",
+    "values": []
+}, {
+    "question": "Current Average Handling time per Transaction (Seconds)",
+    "values": []
+}, {
+    "question": "Frequency of Changes to Source systems",
+    "values": [{
+        "name": "Bi-Weekly",
+        "value": ""
+    }, {
+        "name": "Monthly",
+        "value": ""
+    }, {
+        "name": "Quaterly",
+        "value": ""
+    }, {
+        "name": "Half-Yearly",
+        "value": ""
+    }, {
+        "name": "Yearly",
+        "value": ""
+    }]
+}, {
+    "question": "Is the process has any impact on end user facing applications?",
+    "values": [{
+            "name": "Yes",
+            "value": "20"
+        },
+        {
+            "name": "No",
+            "value": "10"
+
+        }
+    ]
+}, {
+    "question": "Impact of manual error on customer financials",
+    "values": [{
+            "name": "High",
+            "value": "40"
+        },
+        {
+            "name": "Medium",
+            "value": "30"
+        },
+        {
+            "name": "Low",
+            "value": "20"
+        },
+        {
+            "name": "Nil",
+            "value": "0"
+        }
+    ]
+}, {
+    "question": "Impact of manual error on end customer",
+    "values": [{
+            "name": "High",
+            "value": "40"
+        },
+        {
+            "name": "Medium",
+            "value": "30"
+        },
+        {
+            "name": "Low",
+            "value": "20"
+        },
+        {
+            "name": "Nil",
+            "value": "0"
+        }
+    ]
+}, {
+    "question": "Level of advantages with AHT reduction",
+    "values": [{
+            "name": "High",
+            "value": "5"
+        },
+        {
+            "name": "Medium",
+            "value": "3"
+        },
+        {
+            "name": "Low",
+            "value": "2"
+        },
+        {
+            "name": "Nil",
+            "value": "0"
+        }
+    ]
+}]

@@ -1,0 +1,26 @@
+.section-main, .second-view {
+	
+	width: 100%;
+}
+.content-main {
+	height: 90%;
+	width: 100%;
+	
+}
+.toolbar-main {
+	height: 10%;
+	width: 100%;
+}
+.plain-toolbar {
+	background: rgb(29, 157, 144) !important;
+	color: #000 !important;
+}
+.details-heading{
+	font-weight: bold;
+}
+.details{
+	font-weight:normal;
+}
+.heading-process{
+	margin-left:35px;
+}

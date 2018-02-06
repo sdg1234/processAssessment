@@ -1,0 +1,83 @@
+.score-dialog{
+    width:40%;
+    height: 50%;
+    overflow: none;
+    background: rgba(0,0,0,0.65);
+}
+.scoreDialog-heading{
+    width:100%;
+    height: 30%;
+    padding: 15px;
+    font-size: bold;
+/*    color: rgb(23, 139, 202);*/
+     color:#fff;
+    font-size: 23px;
+    display: flex;
+     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dialogContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+.inference-content{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+/*     color: rgb(23, 139, 202);*/
+    color:#fff;
+}
+.inference-heading
+{
+    font-size: bold;
+    color: rgb(23, 139, 202);
+    font-size: 23px;
+}
+.content{
+    margin:7px;
+}
+.full-score{
+    
+    width:100%;
+    height:100%;
+   
+}
+.sub-score{
+    width:100%;
+    height:80%;
+    display: flex;
+    flex-direction: row;
+   
+}
+.score-btn{
+    width:100%;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dgraph{
+    width:50%;
+    height: 100%;
+}
+.inference{
+    width:48%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.svg-graph{
+    height:66%;
+}
+.butto{
+    background: rgb(29, 157, 144) !important;
+}

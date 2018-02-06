@@ -1,0 +1,201 @@
+tab-item:not([disabled]).md-active md-icon, md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused, md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused md-icon {
+  color: #fff !important;
+}
+md-tabs > md-tabs-wrapper {
+  background-color: rgb(47, 138, 129) !important;
+}
+.my-dropdown{
+/*    width:40%;*/
+}
+.my-text{
+/*    width:30%;*/
+}
+md-input-container:not(.md-input-invalid).md-input-focused label {
+    color: rgb(47, 138, 129);
+}
+md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+    border-color: rgb(47, 138, 129);
+}
+md-input-container label{
+    color: black ;
+}
+md-select md-select-value span{
+    color: black !important;
+}
+.my-text-single{
+    width:50%;
+}
+.my-content{
+    height: 100%;
+}
+.contents{
+        background: #bbb5b5 !important;
+}
+.strike{
+    display:none;
+}
+
+.strike1{
+    display:none;
+}
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+/*    color: #fff !important;*/
+    background-color:#fff !important;
+}
+.contest-dialog {
+    width: 30%;
+    height: 50%;
+    background: rgba(0,0,0,0.7);
+/*    border:1px solid rgba(255, 255, 255, .2);*/
+    border-radius: 10px;
+    color:#fff;
+}
+.previous{
+        margin-right: 100% !important;
+}
+
+/*
+md-select-menu md-option:focus[selected] {
+ background: red !important;
+    color:#fff !importantl
+}
+*/
+md-option:hover{
+    background: #D3D3D3 !important;
+}
+
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-has-value, md-input-container:not(.md-input-invalid).md-input-has-value label{
+        color: 
+            rgb(29, 157, 144);
+    font-size: 1.2em;
+}
+.my-data{
+    width:50%;
+    height:20%;
+    background-color: black;
+}
+.viewReports{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.my-arrow{
+    width:20%;
+    height: 100%;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+}
+.view-card{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-card{
+    width:90%;
+    margin: 8px auto;
+}
+.form-button-next{
+    bottom:40px;
+    right:95px;
+    position:fixed;
+}
+.form-button-previous{
+    bottom:40px;
+    left:95px;
+    position:fixed;
+}
+.form-content{
+    position: relative;
+    height:450px;
+}
+.form-input{
+    width:90%;
+}
+.formdata{
+    width:50%;
+    float:left;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+}
+.mandatory{
+    color:red;
+}
+.save{
+    position:absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+}
+.main-sub-report2 md-tabs > md-tabs-wrapper {
+    background-color:#fff !important;
+  }
+.main-sub-report2 md-tabs .md-tab.md-active{
+    color: black;
+}
+.main-sub-report2 md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+    /*    color: #fff !important;*/
+        background-color:rgb(47, 138, 129) !important;
+    }
+.main-sub-report2 md-tabs.md-default-theme .md-tab, md-tabs .md-tab{
+    color: black;
+}
+/*
+.main-sub-report2 md-tabs{
+    padding: 16px;
+}
+*/
+.card-content{
+    width:500px;
+    height: 450px;
+    padding: 0px!important;
+}
+
+.my-contents{
+    width: 500px;
+    height: 400px;
+    
+}
+.main-sub-report2-content{
+  
+    height:60%;
+}
+.pie-charts-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    margin:5px;
+}
+.chart{
+    margin:5px;
+}
+.chart2{
+    margin:5px;
+}
+.heading-color{
+     color:rgb(23, 139, 202);
+    text-align: center;
+    font-weight: bold;
+    margin:5px;
+}
+.weeks{
+    font-size: 13px;
+ font-weight: bold;
+  position: absolute;
+  top: 69%;
+  left: 3%;
+     -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}

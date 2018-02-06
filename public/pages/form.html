@@ -1,0 +1,187 @@
+<section flex layout="column">
+	<div>
+	
+		<div class="form-tabs" >
+				<md-tabs md-dynamic-height md-border-bottom md-selected="selectedIndex">
+						<md-tab ng-repeat="item in formData" label="{{item.sectionName}}" ng-init="tabIndex=$index" ng-click="tabClick()" >
+								<md-content class="md-padding contents">
+									<div>
+										<!-- card:{{$index}} -->
+										<md-card class="form-card" ng-repeat="number in item.cards track by $index" ng-init="outerIndex=$index"> 
+											<md-card-content class="form-content" ng-if="outerIndex===i">
+                                                <div class="save">
+                                                    <md-tooltip
+              md-direction="bottom">
+              Save File
+            </md-tooltip>
+            <i class="fa fa-floppy-o fa-2x" aria-hidden="true" ng-click="save('save')" ng-if="!((tabIndex===(formData.length-1)) && (outerIndex===(item.cards.length-1))) && !(formData[formdata.length-1].setionName=='View Reports')" ng-class="{'anitha':(formData[formData.length-1].sectionName=='View Reports') && (((tabIndex===(formData.length-2)) && (outerIndex===(item.cards.length-1))))}"></i>
+        </div>
+										<div 
+											 
+											ng-repeat="items in item.questions" 
+											ng-init="innerIndex=$index"
+											>
+											<div class="formdata" ng-if="((outerIndex*8)<=innerIndex) && innerIndex<(((outerIndex+1)*8))">
+													<!-- {{((outerIndex*8)<=innerIndex) && innerIndex<(((outerIndex+1)*8))}}
+													{{((outerIndex*8)<=innerIndex)}}
+													{{innerIndex<(((outerIndex+1)*8))}}
+													 -->
+												<md-input-container id="{{items.id}}" class="form-input" ng-if="items.values.length>0"class="my-dropdown">
+                                                        <label for="">{{items.question}}<span class="mandatory" ng-if="items.type=='mandatory'">*</span>
+                                                            </label>	
+														<md-select class="form-input" ng-model="items.answer.name" ng-change="blurThis(items.id)"  ng-disabled="result">
+																<md-option ng-repeat="option in items.values track by $index" ng-if='option.value != ""' value="{{option.name}}">{{option.name}}</md-option>		
+														</md-select>
+												</md-input-container>
+												<md-input-container class="form-input" ng-if="items.values.length===0" class="my-text">
+                                                        <label for="">{{items.question}}<span class="mandatory" ng-if="items.type=='mandatory'">*</span>
+                                                          </label>
+        
+														<input  type="text" ng-readonly="result" ng-model="items.answer.name">
+												</md-input-container>
+											</div>
+										
+										</div>
+                                        
+										<div class="form-button-next" ng-if="!((tabIndex===(formData.length-1)) && (outerIndex===(item.cards.length-1))) && !(formData[formdata.length-1].setionName=='View Reports')" ng-class="{'anitha':(formData[formData.length-1].sectionName=='View Reports') && (((tabIndex===(formData.length-2)) && (outerIndex===(item.cards.length-1))))}">
+                                    
+												<md-button class="md-raised md-primary" ng-click="nextv(outerIndex,tabIndex)">next</md-button>
+
+										</div>
+                                        
+										<div class="form-button-previous" ng-if="!((tabIndex===0) && (outerIndex===0))">
+												<md-button class="md-raised md-primary" ng-click="prev(outerIndex,tabIndex)">previous</md-button>
+										</div>
+										<div class="form-button-next" ng-if="(tabIndex===(formData.length-1)) && (outerIndex===(item.cards.length-1)) &&(formData[formData.length-1].sectionName!='View Reports')">
+												<md-button class="md-raised md-primary" ng-click="submit('insert')">Submit</md-button>
+										</div>
+                                                <div class="form-button-next" ng-if="(tabIndex===(formData.length-2)) && (outerIndex===(item.cards.length-1)) &&(formData[formData.length-1].sectionName=='View Reports')">
+												<md-button class="md-raised md-primary" ng-click="submit('update')">Submit</md-button>
+										</div>
+                                        
+									</md-card-content>
+										</md-card>
+									</div>
+								</md-content>
+                            <md-content class="md-padding contents" ng-if="item.sectionName=='View Reports'" >
+                              
+                                 <div layout="row" style="position:absolute;
+                                       right:12px">
+				  <span flex></span>
+				  <i class="fa fa-download" aria-hidden="true" ng-click="generatePDF()"></i>
+			  </div>
+                                 <div class="main-report-div">
+<div class="main-sub-report1">
+<div class="viewReports" ng-repeat="items in formData" ng-init="viewIndex=$index" ng-hide="$last">
+    <div class="view-card" style="justify-content:flex-start !important;">
+        <div>
+            <i class="fa fa-arrow-left" aria-hidden="true" ng-click="go(viewIndex)" ng-if="viewIndex===k"></i>
+        </div>
+        <md-card style="width:80%;" id="third-page" ng-if="viewIndex===k" >
+            <md-card-title style="padding:10px !important; background-color:rgb(29, 157, 144);">
+                <div layout="row">
+                    <span flex="10"></span>
+                    <md-card-title-text>
+                        <span class="md-headline">{{items.sectionName}}</span>
+                    </md-card-title-text>
+                </div>
+            </md-card-title>
+            <md-card-content style="height:400px;overflow-y:auto">
+                <div layout="column" layout-align="center" style="padding:8px;" ng-repeat="itemss in items.questions" ng-if="viewIndex===k">
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span> {{itemss.question}}</span>
+                        <span flex=></span>
+                        <span>{{itemss.answer.name}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                   
+                </div>
+            </md-card-content>
+        </md-card>
+         <div>
+            <i class="fa fa-arrow-right" aria-hidden="true" ng-click="go(viewIndex)" ng-if="viewIndex===k"></i>
+        </div>
+    </div>
+</div>
+ </div>
+				  <div class="main-sub-report2" id="pdfScore">
+					<div class="sub-sub-report2">
+                    <md-card>
+                        <md-card-content class="card-content">
+                        
+					<md-tabs md-dynamic-height md-border-bottom>
+                                                <md-tab label="PROCESS AMENABILITY SCORE">
+                                                    <md-content class="md-padding my-contents">
+                                                        <div class="main-sub-report2-heading font666 process"> Process Amenability Score:
+                                                        <div>
+                                                            <svg id="fillgauge1" width="80%" height="80%"></svg>
+                                                        </div>
+                                                            </div>
+                                                        <div class="main-sub-report2-content" id="my-id">
+                                                            <div class="sub-sub-report2">
+                                                            <span class="font666"  ng-if="inference5=='RPA NOT APPLICABLE'"><span class="red-star">★</span>
+                                                                <span class="red">{{inference5}}</span>
+                                                                
+                                                                </span>
+                                                        </div>
+                                                            <div class="pie-charts-div">
+<!--
+                                                          <div class="chart"><span class="font666  heading-color">Bot Creation</span></div>
+                                                                <div class="chart2"><span class="font666 heading-color">Bot Maintainence</span></div>
+                                                                </div>
+                                                                 <div>
+   
+-->
+                                                                 <div>
+                                                                        <div class="weeks">EFFORT IN WEEKS</div>
+                                                                     <canvas id="myChart"></canvas>
+                                                                </div>
+                                                        </div>
+                                                    </md-content>
+                                                </md-tab>
+                                                <md-tab label="INFERENCES">
+                                                    <md-content class="md-padding my-contents">
+                    
+                                                        <div class="inference-heading">
+                                                            <span class="">
+							 							 Inferences
+						 									 </span>
+                                                        </div>
+                                                        <div class="sub-sub-report2">
+                                                            <span class="donot font666">{{inference1}}</span>
+                                                        </div>
+                                                        <div class="sub-sub-report2">
+                                                            <span class="donot font666">{{inference2}}</span>
+                                                        </div>
+                                                        <div class="sub-sub-report2">
+                                                            <span class="donot font666">{{inference3}}</span>
+                                                        </div>
+                                                        <div class="sub-sub-report2">
+                                                            <span class="donot font666">{{inference4}}</span>
+                                                        </div>
+                                            
+                                                        
+                                                    </md-content>
+                                                </md-tab>
+                                            </md-tabs>
+                                       </md-card-content>
+                                     </md-card>
+					  </div>
+					  
+					 
+				 
+				 </div>
+				 </div>
+			 
+              
+                                
+                            </md-content>
+						</md-tab>
+				</md-tabs>
+		</div>
+		
+
+	</div>
+</section>
+ 

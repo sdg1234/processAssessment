@@ -1,0 +1,67 @@
+[{
+    "lob":"Life",
+    "values":[{
+        "businessArea":"New Business",
+        "values":[
+            "Verify Documents","Certificate of Insurance","Screening  proof docs","Policy issuance","Data  Entry","Gathering external data",
+            "Policy  Authorization","Ratemaking","Underwriting"
+         ]
+    },{
+        "businessArea":"Policy Servicing and Renewal",
+        "values":[
+          "Amendments","Renewal letters","Policy Enquiry","Record  Management",
+          "Reinstate, Renewal","Indexing","Reissue, Cancellation"
+         ]
+    },
+    {
+        "businessArea":"Claims",
+        "values":[
+            "Litigation","Third party  Interaction","Coverage  Verification","Update  policy details","Claims  Correspondence",
+            "Claim  Investigation","Fraud Management"
+         ]
+    },
+    {
+        "businessArea":"Billing and Accounting",
+        "values":["Accounts Receivable","Payroll processing","Accounts Payable","Reconcile  broker statements",
+        "Premium  Refunds","Statement  Preparation","Costing &  Budgeting","Retro Billings"
+        ]
+
+    }  
+    ]
+
+},{
+    "lob":"P&C",
+    "values":[{
+        "businessArea":"New Business",
+        "values":[
+            "Verify Documents","Certificate of Insurance","Screening  proof docs","Policy issuance","Data  Entry","Gathering external data",
+            "Policy  Authorization","Ratemaking","Underwriting"
+         ]
+    },{
+        "businessArea":"Policy Servicing and Renewal",
+        "values":[
+          "Amendments","Renewal letters","Loss  Analysis","Policy Enquiry","Record  Management",
+          "Indexing","Reissue, Cancellation","Premium Re-rating","Premium Auditing"
+         ]
+
+    },
+    {
+        "businessArea":"Claims",
+        "values":[
+            "Litigation","FNOL","Third party  Interaction","Coverage  Verification","Claim  Assignment",
+            "Salvage","Subrogation","Update policy details","Status Tracking","Loss Reserving","Claim  Investigation","Claims  Correspondence",
+            "Follow-up with other parties","Fraud  Management"
+            
+         ]
+
+    },
+    {
+        "businessArea":"Billing and Accounting",
+        "values":["Accounts Receivable","Payroll processing","Accounts Payable","Reconcile broker statements","Commission Processing","Wire  Disbursements","Premium Refund","Claims Payment",
+            "Premium  investment","Statement  Preparation","Costing &  Budgeting",
+            "Retro Billings"
+            ]
+
+    }  
+    ]
+}]

@@ -1,0 +1,650 @@
+
+<section flex layout="column">
+	
+  	<md-content class="contents">
+    <md-tabs md-dynamic-height md-border-bottom md-selected="selectedIndex">
+      <md-tab label="Interfacing Systems Details">
+        <md-content class="md-padding contents">
+			<div layout="column" layout-align="center" style="padding:25px;">
+				<md-card style="width:100%;height:100%;" ng-class="{strike:div2}">
+				<md-card-content>
+				<div layout="row">
+					<div flex="5"></div>
+          			<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[0].question}}</label>
+            			<md-select ng-model="formmodel1" ng-disabled="result" ng-change="changed(formData[0],formmodel1)">
+							<md-option  ng-repeat="item in formData[0].values  track by $index" value='{{item.name}}' >{{item.name}}</md-option>	
+             			</md-select>
+         			</md-input-container>
+					 <div flex="10"></div>
+		 			 <md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[1].question}}</label>
+           				 <md-select ng-model="formmodel2" ng-disabled="result" ng-change="changed(formData[1],formmodel2)">
+							<md-option  ng-repeat="item in formData[1].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+        			 </md-input-container>
+				</div>
+				<div layout="row">
+					<div flex="5"></div>
+					<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[2].question}}</label>
+            			<md-select ng-model="formmodel3" ng-disabled="result" ng-change="changed(formData[2],formmodel3)">
+							<md-option  ng-repeat="item in formData[2].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+					 <div flex="10"></div>
+					 <md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[3].question}}</label>
+            			<md-select ng-model="formmodel4" ng-disabled="result" ng-change="changed(formData[3],formmodel4)">
+							<md-option  ng-repeat="item in formData[3].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+				</div>
+				<div layout="row">
+					<div flex="5"></div>
+					<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[4].question}}</label>
+            			<md-select ng-model="formmodel5" ng-disabled="result" ng-change="changed(formData[4],formmodel5)">
+							<md-option  ng-repeat="item in formData[4].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+					 <div flex="10"></div>
+					 <md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[5].question}}</label>
+            			<md-select ng-model="formmodel6" ng-disabled="result" ng-change="changed(formData[5],formmodel6)">
+							<md-option  ng-repeat="item in formData[5].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+				</div>
+				<div layout="row">
+					<div flex="5"></div>
+					<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[6].question}}</label>
+            			<md-select ng-model="formmodel7" ng-disabled="result" ng-change="changed(formData[6],formmodel7)">
+							<md-option  ng-repeat="item in formData[6].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+					 <div flex="10"></div>
+					 <md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[7].question}}</label>
+            			<md-select ng-model="formmodel8" ng-disabled="result" ng-change="changed(formData[7],formmodel8)">
+							<md-option  ng-repeat="item in formData[7].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+				</div>
+				<div layout="row">
+					<span flex></span>
+					<md-button class="md-raised md-primary" ng-click="changes()">Next</md-button>
+				</div>
+				</md-card-content>
+				</md-card>
+
+
+
+				<md-card style="width:100%;height:100%;" ng-class="{strike:div1}">
+				<md-card-content>
+				<div layout="row">
+					<div flex="5"></div>
+          			<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[8].question}}</label>
+            			<md-select ng-model="formmodel9" ng-disabled="result" ng-change="changed(formData[8],formmodel9)">
+							<md-option  ng-repeat="item in formData[8].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+         			</md-input-container>
+					 <div flex="10"></div>
+		 			 <md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[9].question}}</label>
+           				 <md-select ng-model="formmodel10" ng-disabled="result" ng-change="changed(formData[9],formmodel10)" >
+							<md-option  ng-repeat="item in formData[9].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+        			 </md-input-container>
+				</div>
+				<div layout="row">
+					<div flex="5"></div>
+					<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[10].question}}</label>
+            			<md-select ng-model="formmodel11" ng-disabled="result" ng-change="changed(formData[10],formmodel11)">
+							<md-option  ng-repeat="item in formData[10].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+					 <div flex="10"></div>
+					 <md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[11].question}}</label>
+            			<md-select ng-model="formmodel12" ng-disabled="result" ng-change="changed(formData[11],formmodel12)">
+							<md-option  ng-repeat="item in formData[11].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+				</div>
+				<div layout="row">
+					<div flex="5"></div>
+					<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[12].question}}</label>
+            			<md-select ng-model="formmodel13" ng-disabled="result" ng-change="changed(formData[12],formmodel13)">
+							<md-option  ng-repeat="item in formData[12].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+					 <div flex="10"></div>
+					 <md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[13].question}}</label>
+            			<md-select ng-model="formmodel14" ng-disabled="result" ng-change="changed(formData[13],formmodel14)">
+							<md-option  ng-repeat="item in formData[13].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+				</div>
+				<div layout="row">
+					<div flex="5"></div>
+					<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[14].question}}</label>
+            			<md-select ng-model="formmodel15" ng-disabled="result" ng-change="changed(formData[14],formmodel15)" >
+							<md-option  ng-repeat="item in formData[14].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+					 <div flex="10"></div>
+					 <md-input-container style="margin-right: 10px;" class="my-dropdown">
+           				 <label>{{formData[15].question}}</label>
+            			<md-select ng-model="formmodel16" ng-disabled="result" ng-change="changed(formData[15],formmodel16)">
+							<md-option  ng-repeat="item in formData[15].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+					 </md-input-container>
+				</div>
+				<div layout="row">
+					<span flex></span>
+					<md-button class="md-raised md-primary" ng-click="changes()">previous</md-button>
+				</div>
+				</md-card-content>
+				</md-card>
+
+
+		</div>
+        </md-content>
+      </md-tab>
+      <md-tab label="Return on Investment Analysis">
+        <md-content class="md-padding my-content contents">
+		 <div layout="column" layout-align="center" style="padding:25px;">
+				<md-card style="width:100%;height:100%;" ng-class="{strike:div3}" >
+				<md-card-content>
+				<div layout="row">
+					<span flex="5"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[16].question}}</label>
+						<input ng-model="formmodel17" ng-readonly="result" ng-change="changed(formData[16],formmodel17)">
+					</md-input-container>
+					<span flex="10"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[17].question}}</label>
+						<input ng-model="formmodel18" ng-readonly="result" ng-change="changed(formData[17],formmodel18)">
+					</md-input-container>
+				</div>
+			
+				<div layout="row">
+					<span flex="5"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[18].question}}</label>
+						<input ng-model="formmodel19" ng-readonly="result" ng-change="changed(formData[18],formmodel19)">
+					</md-input-container>
+					<span flex="10"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[19].question}}</label>
+						<input ng-model="formmodel20" ng-readonly="result" ng-change="changed(formData[19],formmodel20)">
+					</md-input-container>
+				</div>
+				<div layout="row">
+					<span flex="5"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[20].question}}</label>
+						<input ng-model="formmodel21" ng-readonly="result" ng-change="changed(formData[20],formmodel21)">
+					</md-input-container>
+					<span flex="10"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[21].question}}</label>
+						<input ng-model="formmodel22" ng-readonly="result" ng-change="changed(formData[21],formmodel22)">
+					</md-input-container>
+				</div>
+				<div layout="row">
+					<span flex="5"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[22].question}}</label>
+						<input ng-model="formmodel23" ng-readonly="result" ng-change="changed(formData[22],formmodel23)">
+					</md-input-container>
+					<span flex="10"></span>
+				</div>
+				<div layout="row">
+					<span flex></span>
+					<md-button class="md-raised md-primary" ng-click="changess()">Next</md-button>
+				</div>
+			</div>
+			<md-card style="width:100%;height:100%;" ng-class="{strike:div4}">
+				<md-card-content>
+				<div layout="row">
+					<div flex="5"></div>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[23].question}}</label>
+						<input ng-model="formmodel24" ng-readonly="result" ng-change="changed(formData[23],formmodel24)">
+					</md-input-container>
+					<span flex="10"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[24].question}}</label>
+						<input ng-model="formmodel25" ng-readonly="result" ng-change="changed(formData[24],formmodel25)">
+					</md-input-container>
+				</div>
+				<div layout="row">
+					<span flex="5"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[25].question}}</label>
+						<input ng-model="formmodel26" ng-readonly="result" ng-change="changed(formData[25],formmodel26)">
+					</md-input-container>
+					<span flex="10"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[26].question}}</label>
+						<input ng-model="formmodel27" ng-readonly="result" ng-change="changed(formData[26],formmodel27)">
+					</md-input-container>
+				</div>
+				<div layout="row">
+					<span flex="5"></span>
+					<md-input-container style="margin-right: 10px; width:30%">
+            			<label>{{formData[28].question}}</label>
+            			<md-select ng-model="formmodel28" ng-disabled="result" ng-change="changed(formData[28],formmodel28)">
+							<md-option  ng-repeat="item in formData[28].values track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             			</md-select>
+  					</md-input-container>
+					<span flex="10"></span>
+					<md-input-container class="md-block my-text" >
+						<label>{{formData[27].question}}</label>
+						<input ng-model="formmodel29" ng-readonly="result" ng-change="changed(formData[27],formmodel29)">
+					</md-input-container>
+				</div>
+				<div layout="row">
+					<span flex="5"></span>
+					
+					<span flex="10"></span>
+					
+				</div>
+				<div layout="row">
+					<span flex></span>
+					<md-button class="md-raised md-primary" ng-click="changess()">previous</md-button>
+				</div>
+				</md-card-content>
+				</md-card>
+			
+        </md-content>
+      </md-tab>
+      <md-tab label="Process Criticality">
+        <md-content class="md-padding contents">
+		<div layout="column" layout-align="center center">
+		<md-card style="width:60%;height:100%;">
+		<md-card-content>
+		 <div layout="column" layout-align="center">
+         <div layout="row">
+			 <div flex>{{formData[29].question}}</div>
+			 <div flex>
+				<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           		 <md-select ng-model="formmodel30" ng-disabled="result" ng-change="changed(formData[29],formmodel30)">
+					<md-option  ng-repeat="item in formData[29].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             	</md-select>
+         		</md-input-container>
+			 </div>  
+		 </div>
+		<div layout="row">
+			 <div flex>{{formData[30].question}}</div>
+			 <div flex>
+				<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           			 <md-select ng-model="formmodel31" ng-disabled="result" ng-change="changed(formData[30],formmodel31)">
+						<md-option  ng-repeat="item in formData[30].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             		</md-select>
+         		</md-input-container>
+			 </div>
+		 </div>
+		 <div layout="row">
+			 <div flex>{{formData[31].question}}</div>
+			 <div flex>
+				<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           			 <md-select ng-model="formmodel32" ng-disabled="result" ng-change="changed(formData[31],formmodel32)">
+						<md-option  ng-repeat="item in formData[31].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             		</md-select>
+         		</md-input-container>
+			 </div>
+		 </div>
+		 <div layout="row">
+			 <div flex>{{formData[32].question}}</div>
+			 <div flex>
+				<md-input-container style="margin-right: 10px;" class="my-dropdown">
+           			 <md-select ng-model="formmodel33" ng-disabled="result" ng-change="changed(formData[32],formmodel33)">
+						<md-option  ng-repeat="item in formData[32].values  track by $index" value='{{item.name}}'>{{item.name}}</md-option>	
+             		</md-select>
+         		</md-input-container>
+			 </div>
+		 </div>
+		 <div layout="row">
+					<span flex></span>
+					<md-button class="md-raised md-primary" ng-click="update()">Submit</md-button>
+				</div>
+		</div>
+		</md-card-content>
+            </md-card>
+            </div>
+          </md-content>
+      </md-tab>
+	  <md-tab label="View Reports">
+		  <md-content class="md-padding contents">
+             <div layout="row" style="position:absolute;
+                                       right:12px">
+				  <span flex></span>
+				  <i class="fa fa-download" aria-hidden="true" ng-click="generatePDF()"></i>
+			  </div> 
+			  <div class="main-report-div">
+				  <div class="main-sub-report1">
+
+<div class="viewReports">
+    <div class="view-card">
+        <md-card style="width:90%;" id="first-page" ng-class="{strike:view1}">
+            <md-card-title style="padding:10px !important; background-color:rgb(29, 157, 144);">
+                <div layout="row">
+                    <span flex="10"></span>
+                    <md-card-title-text>
+                        <span class="md-headline">Interfacing Systems Details</span>
+                    </md-card-title-text>
+                </div>
+            </md-card-title>
+            <md-card-content style="height:400px;overflow-y:auto">
+                <div layout="column" layout-align="center" style="padding:8px;">
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[0].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel1}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[1].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel2}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[2].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel3}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[3].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel4}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[4].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel5}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[5].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel6}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[6].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel7}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[7].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel8}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[8].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel9}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[9].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel10}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[10].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel11}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[11].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel12}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[12].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel13}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[13].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel14}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[14].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel15}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[15].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel16}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+        <div class="my-arrow" ng-class="{strike:view1}">
+            <i class="fa fa-arrow-right" aria-hidden="true" ng-click="firstpage()"></i>
+        </div>
+    </div>
+</div>
+<div class="viewReports">
+    <div class="view-card">
+        <div ng-class="{strike:view2}">
+            <i class="fa fa-arrow-left" aria-hidden="true" ng-click="firstpage()"></i>
+        </div>
+        <md-card style="width:90%;" id="second-page" ng-class="{strike:view2}">
+            <md-card-title style="padding:10px !important; background-color:rgb(29, 157, 144);">
+                <div layout="row">
+                    <span flex="10"></span>
+                    <md-card-title-text>
+                        <span class="md-headline">Return on Investment Analysis</span>
+                    </md-card-title-text>
+                </div>
+            </md-card-title>
+            <md-card-content style="height:400px;overflow-y:auto">
+                <div layout="column" layout-align="center" style="padding:8px;">
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[16].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel17}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[17].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel18}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[18].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel19}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[19].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel20}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[20].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel21}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[21].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel22}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[22].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel23}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[23].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel24}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[24].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel25}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[25].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel26}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[26].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel27}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[28].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel28}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[27].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel29}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+        <div class="my-arrow" ng-class="{strike:view2}">
+            <i class="fa fa-arrow-right" aria-hidden="true" ng-click="secondpage()"></i>
+        </div>
+    </div>
+</div>
+<div class="viewReports">
+    <div class="view-card" style="justify-content:flex-start !important;">
+        <div ng-class="{strike:view3}">
+            <i class="fa fa-arrow-left" aria-hidden="true" ng-click="thirdpage()"></i>
+        </div>
+        <md-card style="width:80%;" id="third-page" ng-class="{strike:view3}">
+            <md-card-title style="padding:10px !important; background-color:rgb(29, 157, 144);">
+                <div layout="row">
+                    <span flex="10"></span>
+                    <md-card-title-text>
+                        <span class="md-headline">Process Criticality</span>
+                    </md-card-title-text>
+                </div>
+            </md-card-title>
+            <md-card-content style="height:400px;overflow-y:auto">
+                <div layout="column" layout-align="center" style="padding:8px;">
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[29].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel30}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[30].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel31}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[31].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel32}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                    <div layout="row" style="padding:10px;" layout-align="center center">
+                        <div flex="5"></div>
+                        <span>{{formData[32].question}}</span>
+                        <span flex=></span>
+                        <span>{{formmodel33}}</span>
+                        <!--<div flex="10"></div>-->
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>
+
+
+				  </div>
+				  <div class="main-sub-report2">
+					<div class="main-sub-report2-heading"> Process Amenability Score:</div>
+                    <div><svg id="fillgauge1" width="40%" height="40%"></svg></div>
+				 </div>
+			  </div>
+                
+          </md-content>
+	  </md-tab>
+    </md-tabs>
+  </md-content>
+
+
+</section>
+ 

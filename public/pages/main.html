@@ -1,0 +1,66 @@
+<md-sidenav class="md-sidenav-left" md-component-id="left"
+    md-disable-backdrop md-whiteframe="4">
+
+      <md-toolbar class="plain-toolbar">
+        <md-button ng-click="toggleLeft()" class="md-icon-button black-font">
+			<i class="fa fa-chevron-left"></i>
+		</md-button>
+      </md-toolbar>
+
+      <md-content layout-margin style="background-color:rgb(255,255,255);">
+        <md-list-item ng-click="navigateTo(item.state,$event)" ng-repeat="item in sideNavData">
+			{{item.name}}
+		</md-list-item>
+      </md-content>
+
+</md-sidenav>
+<section class="section-main">
+	<md-toolbar class="toolbar-main plain-toolbar">
+      <div class="md-toolbar-tools">
+		<md-button ng-click="toggleLeft()" class="md-icon-button black-font">
+			<i class="fa fa-bars"></i>
+		</md-button>
+        <h2>
+          <span ng-if="details">Process Assessment</span>
+        <span ng-if=!details>Process Assessment - WorkList</span>
+        </h2>
+        <span flex></span>
+        
+      
+        <!-- <div class="anitha">  
+            <span  ng-if="details"><b>Process Name:</b>&nbsp;{{processNames}}</span>
+        </div>
+        <div class="profile-drop-down">
+        <span flex ng-if="details">&nbsp;{{processNames}}</span>
+        <span flex ng-if="details"><b>Account Name:</b>&nbsp;{{accountNames}}</span>
+        <span flex ng-if="details"><b>LOB:</b>&nbsp;{{LOBs}}</span>
+        <span flex ng-if="details"><b>Business Area:</b>&nbsp;{{businessArea}}</span>
+        <span flex ng-if="details"><b>Process Area:</b>&nbsp;{{processArea}}</span>
+      </div> -->
+      <div class="my-card" ng-if="details"> 
+        <div class="heading-process">
+        <span> <b>Process Name : </b></span> 
+        <span>  &nbsp;{{processNames}}</span> </div>
+        <span class="rotate-chevron"> &nbsp;  <i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+      <div class="drop-down">
+          <div ng-if="details"><b>Line of Business :</b>&nbsp;{{LOBs}}</div>
+          <div ng-if="details"><b>Business Area :</b>&nbsp;{{businessArea}}</div>
+          <div ng-if="details"><b>Process Area :</b>&nbsp;{{processArea}}</div>
+         <div ng-if="details"><b>Account Name :</b>&nbsp;{{accountNames}}</div>
+         
+        
+      </div>
+      </div>
+
+      
+        </div>
+       
+      </div>
+    </md-toolbar>
+	<div class="content-main">
+		<div class="second-view" ui-view layout="column">
+		
+		</div>
+	</div>
+</section>
+

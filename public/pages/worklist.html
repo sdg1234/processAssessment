@@ -1,0 +1,34 @@
+<section class="full">
+<div class="total-worklist">
+	
+       <div class="box dog-ear" ng-repeat="items in data" ng-class="{'worklist-save':items.type=='save'}">
+  
+        <div class="data">
+        <div class="sub-data">
+            <div class="sub-data-heading font66">Process Name:</div>
+             <div class="sub-data-data font66">{{items.processName}}</div>
+            </div>
+            <div class="sub-data">
+            <div class="sub-data-heading font66">Account Name:</div>
+             <div class="sub-data-data font66">{{items.accountName}}</div>
+            </div>
+            <div class="sub-data">
+            <div class="sub-data-heading font66">Line Of Bussiness:</div>
+             <div class="sub-data-data font66">{{items.lob}}</div>
+            </div>
+            <div class="sub-data">
+            <div class="sub-data-heading font66">Process Description:</div>
+             <div class="sub-data-data font66">{{items.processDesc | limitTo: 9 }} {{items.processDesc.length < 9 ? '' : '...'}}</div>
+            </div>
+        </div>
+   <div class="buttons-worklist">
+		  <md-button class="md-raised btn " ng-click="edit(items.form_id,items.score)">Edit</md-button>
+		  <md-button class="md-raised btn " ng-click="view(items.form_id,items.score)">View</md-button>
+		  </div>
+</div>
+
+</div>
+</section>
+
+
+

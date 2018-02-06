@@ -1,0 +1,11 @@
+.search{
+    float: right;
+}
+.videoAdjust{
+
+}
+.inline{
+dispaly:flex;
+flex-direction:column;
+justify:content;
+}

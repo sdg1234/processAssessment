@@ -1,0 +1,81 @@
+[{
+    "inference":"roiScore",
+    "high": [
+        {
+            "name":"Significant gains with FTE Reduction",
+            "value": 15
+        }
+    ],
+    "medium":[
+        {
+            "name":"FTE Reduction",
+            "value": 7
+        }
+    ],
+    "low":[
+        {
+             "name":"Return on Investment is too Low",
+            "value": 0
+        }
+    ]   
+},{
+    "inference":"processCriticality",
+    "high": [
+        {
+            "name":"Improved customer satisfaction with manual errors reduction",
+            "value": 15
+        }
+    ],
+    "medium":[
+        {
+            "name":"Reduction of manual errors",
+            "value": 7
+        }
+    ],
+    "low":[
+        {
+             "name":"Less critical process",
+            "value": 0
+        }
+    ]   
+},{
+    "inference":"automation",
+    "high": [
+        {
+            "name":"Process Classification - Less Complexity",
+            "value": 40
+        }
+    ],
+    "medium":[
+        {
+            "name":"Process Classification - Medium Complexity",
+            "value": 25
+        }
+    ],
+    "low":[
+        {
+             "name":"Process Classification - Complexity is very High",
+            "value": 0
+        }
+    ]   
+},{
+    "inference":"ProcessAminabilityScore",
+    "high": [
+        {
+            "name":"High scope for Automation",
+            "value": 80
+        }
+    ],
+    "medium":[
+        {
+            "name":"Moderate scope for Automation",
+            "value": 65
+        }
+    ],
+    "low":[
+        {
+             "name":"Low scope for Automation",
+            "value": 0
+        }
+    ]   
+}]

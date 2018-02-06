@@ -1,0 +1,28 @@
+.contest-dialog{
+    width:50%;
+    height:570px;
+    background-color: rgb(255, 255, 255);
+    max-height:100%;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+.dialog-heading{
+     color: #fff0f0;
+    font-size: xx-large;
+    text-align: center;
+    height: 10%;
+    background: #1e615a;
+    font-weight: lighter;
+}
+.content-content{
+    overflow:hidden !important;
+}
+.content-dialog{
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.input-dialog{
+padding: 2px 2px 5px !important;
+height:75px !important;
+}

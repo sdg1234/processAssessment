@@ -1,0 +1,48 @@
+<md-dialog class="score-dialog">
+     <md-dialog-content class="dialogContent" >
+<!--
+         <div class="scoreDialog-heading">
+             Process Aminability Score
+         </div>
+             <svg id="fillgauge1" width="80%" height="80%">
+             </svg>
+         <div class="inference-content">
+        <span class="inference-heading">Inferences</span>
+        <span> {{inference1}}</span>
+        <span> {{inference2}}</span>
+         <span>{{inference3}}</span>
+         <span>{{inference4}}</span>
+        </div>
+-->
+         
+         
+        <div class="full-score">
+            <div class="sub-score">
+                <div class="dgraph">
+                    <div class="scoreDialog-heading">
+                                Process Aminability Score
+                    </div>
+                    <div class="svg-graph">
+                        <svg id="fillgauge2" width="80%" height="80%">
+                        </svg>
+                    </div>
+                </div>
+                <div class="inference">
+                    <div class="scoreDialog-heading">
+                          Inferences
+                    </div>
+                    <div class="inference-content">
+                            <span class="content"> {{inference1}}</span>
+                            <span class="content"> {{inference2}}</span>
+                             <span class="content">{{inference3}}</span>
+                             <span class="content">{{inference4}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="score-btn">
+                <md-button class="md-raised butto" ng-click="scoreDialog()">
+                Ok</md-button>
+            </div>
+         </div>
+     </md-dialog-content>
+</md-dialog>
