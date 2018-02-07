@@ -41,29 +41,7 @@ app.use(function (req, res, next) {
         // Pass to next layer of middleware
         next();
     });
-app.get('/ping', function (req, res) {
-    // var x = [];
-    // x[0] = 'b';
-    // x[1] = 'c';
-    var headers = {
-        'Authorization': 'Bearer c364b14ee5b9419e8c301aa6e361c8a7'
-    };
-    console.log("am in ping");
-    var options = {
-        url: 'https://api.dialogflow.com/v1/query?v=20170712&query=i%20am%20having%20my%20life%20insurance%20policy%20with%20abc%20insurance%20and%20my%20policy%20id%20is%20123456%20i%20would%20like%20to%20change%20the%20beneficiary%20details%20from%20my%20wife%20to%20my%20children&lang=en&sessionId=1bcc6ec2-3444-41e6-881e-af035318ca01&timezone=Asia/Calcutta',
-        headers: headers
-    };
-    
-    function callback(error, response, body) {
-        if (!error && response.statusCode == 200) {
-           res.send(body);
-        }
-    }
-    
-    request(options, callback);
-    
-    
-});
+
 
 // usersJson();
 function usersJson(){
